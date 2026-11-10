@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d1c">
+  <meta name="description" content="Animated step-by-step user guide for the Bank Loan Risk Prediction project.">
+  <title>Bank Loan Risk Prediction | Interactive User Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="noise"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Guide home"><span class="brand-mark">✦</span><span>BANK<span class="brand-accent">RISK</span><small>PROJECT GUIDE</small></span></a>
+    <div class="top-right"><span class="owner-chip"><span class="live-dot"></span> PROJECT OWNER: NILESH MANKE</span><button class="soundless" id="restartTop" title="Restart guide">↺ <span>Restart</span></button></div>
+  </header>
+
+  <main class="shell">
+    <div class="progress-area">
+      <div class="progress-meta"><span id="stepLabel">WELCOME</span><span id="stepCount">01 / 12</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      <div class="progress-dots" id="progressDots" aria-label="Guide progress"></div>
+    </div>
+
+    <section class="slide active" data-title="WELCOME">
+      <div class="welcome-layout">
+        <div class="welcome-copy">
+          <div class="eyebrow"><span class="pulse"></span> INTERACTIVE USER MANUAL</div>
+          <h1>Make your first<br><span class="gradient-text">risk prediction.</span></h1>
+          <p class="intro">A friendly, step-by-step walkthrough of the Bank Loan Risk Prediction application. Learn what to enter, which values are accepted, and how to understand the result.</p>
+          <div class="welcome-actions"><button class="btn btn-primary" data-next>Start the guide <span>→</span></button><a class="text-link" href="https://bank-f-nu.vercel.app/" target="_blank" rel="noopener">Open live application ↗</a></div>
+          <div class="mini-facts"><div><b>08</b><span>Input fields</span></div><div><b>01</b><span>Prediction model</span></div><div><b>24/7</b><span>Online guide</span></div></div>
+        </div>
+        <div class="hero-art">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div>
+          <div class="floating-chip chip-top">✧ MACHINE LEARNING</div>
+          <div class="dashboard-card">
+            <div class="dash-head"><span class="dash-icon">◈</span><span>RISK INTELLIGENCE</span><i>LIVE UI</i></div>
+            <div class="dash-title">Applicant analysis</div><div class="dash-sub">Your information becomes a model input</div>
+            <div class="scan-line"></div>
+            <div class="fake-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="dash-bottom"><span>RANDOM FOREST</span><b>AI <em>/ ML</em></b></div>
+          </div>
+          <div class="floating-chip chip-bottom">✦ 8 FEATURES · 1 RESULT</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="PROJECT OVERVIEW">
+      <div class="slide-heading"><span class="chapter">01 / BEFORE YOU START</span><h2>Welcome to your <span class="gradient-text">project guide.</span></h2><p>This project uses applicant and loan details to estimate a risk category with a trained Random Forest machine-learning model.</p></div>
+      <div class="overview-grid">
+        <article class="glass-card"><div class="icon-box">⌁</div><h3>Enter details</h3><p>Provide eight numeric values about the applicant and requested loan.</p></article>
+        <article class="glass-card"><div class="icon-box">◎</div><h3>Model analysis</h3><p>The frontend sends the values to the Flask API, which runs the trained model.</p></article>
+        <article class="glass-card"><div class="icon-box">✧</div><h3>View prediction</h3><p>The application displays LOW RISK or HIGH RISK and may show a high-risk probability.</p></article>
+      </div>
+      <div class="callout info"><b>Remember</b><span>This is an academic demonstration. A prediction is not a loan approval, rejection, or professional financial assessment.</span></div>
+    </section>
+
+    <section class="slide" data-title="HOW TO USE">
+      <div class="slide-heading"><span class="chapter">02 / THE WORKFLOW</span><h2>Three simple steps. <span class="gradient-text">That's it.</span></h2><p>Follow this sequence whenever you want to test an applicant profile.</p></div>
+      <div class="timeline">
+        <div class="timeline-item"><div class="timeline-number">01</div><div><h3>Open the application</h3><p>Visit the live frontend using the button below. Find the Applicant Information / Prediction form.</p></div><span class="timeline-icon">↗</span></div>
+        <div class="timeline-item"><div class="timeline-number">02</div><div><h3>Complete all eight fields</h3><p>Enter numeric values one field at a time. Follow the range and format guidance in the next screens.</p></div><span class="timeline-icon">⌨</span></div>
+        <div class="timeline-item"><div class="timeline-number">03</div><div><h3>Predict and read the result</h3><p>Press the prediction button, wait for the response, then review the risk label and probability.</p></div><span class="timeline-icon">✧</span></div>
+      </div>
+      <a class="btn btn-secondary" href="https://bank-f-nu.vercel.app/" target="_blank" rel="noopener">Open Bank Loan Risk Prediction ↗</a>
+    </section>
+
+    <section class="slide field-slide" data-title="INPUT 1 · AGE">
+      <div class="field-layout"><div class="field-copy"><span class="chapter">03 / INPUT FIELD 01 OF 08</span><div class="field-icon">♙</div><h2>Applicant <span class="gradient-text">Age</span></h2><p>Enter the applicant's current age in completed years.</p>
+        <div class="range-box"><small>ACCEPTED BY THE APPLICATION</small><strong>18 <span>—</span> 100</strong><em>years</em></div>
+        <ul class="tips"><li>Use a whole number.</li><li>Minimum accepted age: 18.</li><li>Maximum accepted age: 100.</li></ul>
+        <div class="example"><span>EXAMPLE ENTRY</span><b>39</b><small>39 years old</small></div>
+      </div><div class="field-visual"><div class="number-orbit"><span>AGE</span><strong>39</strong><small>YEARS</small></div><div class="orbit-label label-one">MIN · 18</div><div class="orbit-label label-two">MAX · 100</div></div></div>
+    </section>
+
+    <section class="slide field-slide" data-title="INPUT 2 · ANNUAL INCOME">
+      <div class="field-layout"><div class="field-copy"><span class="chapter">04 / INPUT FIELD 02 OF 08</span><div class="field-icon">₹</div><h2>Annual <span class="gradient-text">Income</span></h2><p>Enter the applicant's total income for one year.</p>
+        <div class="range-box"><small>APPLICATION VALIDATION</small><strong>₹0 <span>+</span></strong><em>Indian rupees (₹)</em></div>
+        <ul class="tips"><li>Zero or a positive value is accepted by the current API validation.</li><li>No maximum value is defined in the current validation code.</li><li>Enter the yearly amount, not monthly income.</li></ul>
+        <div class="example"><span>EXAMPLE ENTRY</span><b>412861</b><small>₹4,12,861 per year</small></div>
+      </div><div class="field-visual"><div class="number-orbit money-orbit"><span>YEARLY INCOME</span><strong>₹</strong><small>INR</small></div><div class="orbit-label label-one">MIN · ₹0</div><div class="orbit-label label-two">NO MAX SET</div></div></div>
+    </section>
+
+    <section class="slide field-slide" data-title="INPUT 3 · CREDIT SCORE">
+      <div class="field-layout"><div class="field-copy"><span class="chapter">05 / INPUT FIELD 03 OF 08</span><div class="field-icon">◉</div><h2>Credit <span class="gradient-text">Score</span></h2><p>Enter the applicant's credit score as a numeric value.</p>
+        <div class="range-box"><small>ACCEPTED BY THE APPLICATION</small><strong>300 <span>—</span> 900</strong><em>credit score points</em></div>
+        <ul class="tips"><li>Minimum accepted score: 300.</li><li>Maximum accepted score: 900.</li><li>Use the score shown in the applicant's credit record.</li></ul>
+        <div class="example"><span>EXAMPLE ENTRY</span><b>731</b><small>Credit score: 731</small></div>
+      </div><div class="field-visual"><div class="gauge"><div class="gauge-inner"><strong>731</strong><span>CREDIT SCORE</span></div></div><div class="orbit-label label-one">300 · MIN</div><div class="orbit-label label-two">900 · MAX</div></div></div>
+    </section>
+
+    <section class="slide field-slide" data-title="INPUT 4 · DEBT-TO-INCOME">
+      <div class="field-layout"><div class="field-copy"><span class="chapter">06 / INPUT FIELD 04 OF 08</span><div class="field-icon">％</div><h2>Debt-to-Income <span class="gradient-text">Ratio</span></h2><p>This is the proportion of income used for debt payments. Enter it as a decimal, not as a whole percentage.</p>
+        <div class="range-box"><small>ACCEPTED BY THE APPLICATION</small><strong>0 <span>—</span> 1</strong><em>decimal ratio</em></div>
+        <ul class="tips"><li>0 means 0%.</li><li>0.18 means 18%.</li><li>1.00 means 100%. Do not enter 18 for 18%.</li></ul>
+        <div class="example"><span>EXAMPLE ENTRY</span><b>0.18</b><small>Equivalent to 18%</small></div>
+      </div><div class="field-visual"><div class="ratio-ring"><div><strong>18%</strong><span>DTI EXAMPLE</span></div></div><div class="orbit-label label-one">0 = 0%</div><div class="orbit-label label-two">1 = 100%</div></div></div>
+    </section>
+
+    <section class="slide field-slide" data-title="INPUT 5 · LOAN AMOUNT">
+      <div class="field-layout"><div class="field-copy"><span class="chapter">07 / INPUT FIELD 05 OF 08</span><div class="field-icon">₹</div><h2>Requested Loan <span class="gradient-text">Amount</span></h2><p>Enter the principal amount the applicant wants to borrow.</p>
+        <div class="range-box"><small>APPLICATION VALIDATION</small><strong>₹0 <span>+</span></strong><em>Indian rupees (₹)</em></div>
+        <ul class="tips"><li>Zero or a positive value is accepted by the current API validation.</li><li>No maximum value is defined in the current validation code.</li><li>Enter the requested loan principal, not the monthly instalment.</li></ul>
+        <div class="example"><span>EXAMPLE ENTRY</span><b>67047</b><small>₹67,047 requested</small></div>
+      </div><div class="field-visual"><div class="number-orbit money-orbit"><span>LOAN PRINCIPAL</span><strong>₹</strong><small>REQUESTED</small></div><div class="orbit-label label-one">MIN · ₹0</div><div class="orbit-label label-two">NO MAX SET</div></div></div>
+    </section>
+
+    <section class="slide field-slide" data-title="INPUT 6 · LOAN TERM">
+      <div class="field-layout"><div class="field-copy"><span class="chapter">08 / INPUT FIELD 06 OF 08</span><div class="field-icon">◷</div><h2>Loan <span class="gradient-text">Term</span></h2><p>Enter how long the applicant plans to take to repay the loan.</p>
+        <div class="range-box"><small>APPLICATION VALIDATION</small><strong>More than 0</strong><em>months</em></div>
+        <ul class="tips"><li>The API requires a value greater than zero.</li><li>No maximum term is defined in the current validation code.</li><li>Use a whole number of months for the form.</li></ul>
+        <div class="example"><span>EXAMPLE ENTRY</span><b>60</b><small>60 months · 5 years</small></div>
+      </div><div class="field-visual"><div class="number-orbit"><span>REPAYMENT</span><strong>60</strong><small>MONTHS</small></div><div class="orbit-label label-one">MIN · &gt; 0</div><div class="orbit-label label-two">NO MAX SET</div></div></div>
+    </section>
+
+    <section class="slide field-slide" data-title="INPUT 7 · PAST LOANS">
+      <div class="field-layout"><div class="field-copy"><span class="chapter">09 / INPUT FIELD 07 OF 08</span><div class="field-icon">▤</div><h2>Previous <span class="gradient-text">Loans</span></h2><p>Enter the number of loans the applicant has taken previously.</p>
+        <div class="range-box"><small>APPLICATION VALIDATION</small><strong>0 <span>+</span></strong><em>whole-number count</em></div>
+        <ul class="tips"><li>Zero or a positive value is accepted.</li><li>No maximum count is defined in the current validation code.</li><li>Use a whole number, not a decimal.</li></ul>
+        <div class="example"><span>EXAMPLE ENTRY</span><b>2</b><small>Two previous loans</small></div>
+      </div><div class="field-visual"><div class="number-orbit"><span>LOAN HISTORY</span><strong>02</strong><small>PAST LOANS</small></div><div class="orbit-label label-one">MIN · 0</div><div class="orbit-label label-two">NO MAX SET</div></div></div>
+    </section>
+
+    <section class="slide field-slide" data-title="INPUT 8 · DEFAULTS">
+      <div class="field-layout"><div class="field-copy"><span class="chapter">10 / INPUT FIELD 08 OF 08</span><div class="field-icon">◇</div><h2>Previous <span class="gradient-text">Defaults</span></h2><p>Enter the number of previous loan defaults reported for the applicant.</p>
+        <div class="range-box"><small>APPLICATION VALIDATION</small><strong>0 <span>+</span></strong><em>whole-number count</em></div>
+        <ul class="tips"><li>Zero or a positive value is accepted.</li><li>No maximum count is defined in the current validation code.</li><li>Use the applicant's actual repayment history; do not guess.</li></ul>
+        <div class="example"><span>EXAMPLE ENTRY</span><b>0</b><small>No previous defaults</small></div>
+      </div><div class="field-visual"><div class="number-orbit"><span>DEFAULT HISTORY</span><strong>00</strong><small>DEFAULTS</small></div><div class="orbit-label label-one">MIN · 0</div><div class="orbit-label label-two">NO MAX SET</div></div></div>
+    </section>
+
+    <section class="slide" data-title="SUBMIT & PREDICT">
+      <div class="slide-heading"><span class="chapter">11 / RUN THE MODEL</span><h2>Ready? Let's <span class="gradient-text">make a prediction.</span></h2><p>After entering all eight values in the live application, submit the form to receive the model output.</p></div>
+      <div class="submit-steps">
+        <div><span>1</span><b>Review all values</b><small>Check each number and its unit.</small></div>
+        <div><span>2</span><b>Click Predict</b><small>The frontend sends a JSON request to the Flask API.</small></div>
+        <div><span>3</span><b>Wait for analysis</b><small>The Random Forest model returns a risk class.</small></div>
+      </div>
+      <div class="sample-card"><div><small>ILLUSTRATIVE SAMPLE FROM THE PROJECT README</small><h3>Example applicant values</h3><p>Age 39 · Income ₹4,12,861 · Credit score 731 · DTI 0.18 · Loan ₹67,047 · Term 60 months · Past loans 2 · Defaults 0</p></div><span class="sample-stamp">SAMPLE</span></div>
+      <a class="btn btn-primary" href="https://bank-f-nu.vercel.app/" target="_blank" rel="noopener">Open the application ↗</a>
+    </section>
+
+    <section class="slide" data-title="UNDERSTAND RESULTS">
+      <div class="slide-heading"><span class="chapter">12 / UNDERSTAND THE OUTPUT</span><h2>Two possible <span class="gradient-text">risk labels.</span></h2><p>The model's target is Risk_Flag. The displayed class describes the model's prediction for the submitted values.</p></div>
+      <div class="result-grid">
+        <div class="result-card result-low"><div class="result-symbol">✓</div><small>CLASS 0</small><h3>LOW RISK</h3><p>The model placed the applicant profile in its low-risk class.</p></div>
+        <div class="result-card result-high"><div class="result-symbol">!</div><small>CLASS 1</small><h3>HIGH RISK</h3><p>The model placed the applicant profile in its high-risk class.</p></div>
+      </div>
+      <div class="callout warning"><b>Important limitation</b><span>The probability is a model estimate, not a guarantee. This educational project has not been independently validated for real lending decisions. Never use it as the sole basis to approve or reject a real loan.</span></div>
+    </section>
+
+    <section class="slide" data-title="HELP & PROJECT TEAM">
+      <div class="slide-heading"><span class="chapter">13 / FINISH</span><h2>You're ready to <span class="gradient-text">use the project.</span></h2><p>Keep these links handy. If the first request is slow, the free backend may be waking from an idle period.</p></div>
+      <div class="service-links">
+        <a href="https://bank-f-nu.vercel.app/" target="_blank" rel="noopener"><span>↗</span><div><b>Live frontend</b><small>Open the prediction dashboard</small></div><i>↗</i></a>
+        <a href="https://bank-loan-risk-api-n.onrender.com/api/health" target="_blank" rel="noopener"><span>⌁</span><div><b>Backend health</b><small>Check API and model status</small></div><i>↗</i></a>
+        <a href="https://bank-loan-risk-api-n.onrender.com/api/model-info" target="_blank" rel="noopener"><span>◎</span><div><b>Model information</b><small>View model and feature details</small></div><i>↗</i></a>
+      </div>
+      <div class="team-heading">PROJECT TEAM</div>
+      <div class="team-grid">
+        <div class="team-card"><div class="avatar">NM</div><b>Nilesh Manke</b><small>Project Owner</small></div>
+        <div class="team-card"><div class="avatar">SQ</div><b>Shakir Qureshi</b><small>Model creation & dataset collection</small></div>
+        <div class="team-card"><div class="avatar">RR</div><b>Rahul Rathod</b><small>Data cleaning & EDA</small></div>
+      </div>
+      <div class="finish-line"><span class="finish-star">✦</span><h3>Thanks for exploring!</h3><p>Bank Loan Risk Prediction · Interactive User Guide</p><button class="btn btn-secondary" id="finishRestart">↺ Start again</button></div>
+    </section>
+  </main>
+
+  <footer class="bottom-bar">
+    <button class="nav-btn back-btn" id="backBtn" disabled>← <span>Back</span></button>
+    <div class="footer-center"><span id="footerTitle">WELCOME</span><small>Use ← → keys to navigate</small></div>
+    <button class="nav-btn next-btn" id="nextBtn">Next <span>→</span></button>
+  </footer>
+  <div class="keyboard-hint">MADE FOR EASY LEARNING <span>✦</span> PROJECT OWNER: NILESH MANKE</div>
+  <script src="script.js"></script>
+</body>
+</html>
